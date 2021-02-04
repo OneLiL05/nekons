@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Войти</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../develop/css/sign-in-style.css">
+    <link rel="stylesheet" href="../../develop/css/design-system.css">
+    <link rel="stylesheet" href="../../develop/css/components.css">
+</head>
+<body>
+<header id="navigation">
+    <img src="" alt="logo" class="logo, right-space-xxl, left-space-xxl">
+    <nav>
+        <a href="../../develop/directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
+        <a href="../../develop/popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
+        <a href="../../develop/last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
+    </nav>
+    <form action="">
+        <label>
+            <input type="search" id="search-input" required placeholder="Что ищем?" class="left-space-xxl">
+            <button class="right-space-lg" id="search-button" type="submit" aria-label="Поиск">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/search-icon.svg#search"></use>
+                </svg>
+            </button>
+        </label>
+    </form>
+    <button class="icon-btn left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+        </svg>
+    </button>
+    <a href="../../develop/bookmarks/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
+        </svg>
+    </a>
+    <a href="../../develop/notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
+        </svg>
+    </a>
+    <a href="/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+        </svg>
+    </a>
+</header>    <div id="sign-in">
+            <h1 class="primary-heading bottom-space-md">Войти</h1>
+            <label class="bottom-space-sm">
+                <p class="top-space-sm bottom-space-xs">Логин</p>
+                <input id="email-input" type="text" placeholder="Логин" inputmode="email" name="email" required aria-label="Введи свой email">
+            </label>
+            <label>
+                <p class="top-space-sm bottom-space-xs">Пароль</p>
+                <input id="password-input" type="password" placeholder="Пароль" name="password" required aria-label="Введи свой пароль">
+            </label>
+            <label class="check top-space-sm">
+                <input class="check-input" type="checkbox" name="keep">
+                <span class="check-box right-space-xxs">
+                    <svg class="check-icon" aria-hidden="true">
+                        <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                    </svg>
+                </span>
+                <span class="checkbox-text right-space-xxl">Запомнить меня</span>
+            </label>
+            <button type="submit" class="top-space-md" id="login-button">Войти</button>
+            <div class="sign-up top-space-sm">
+                <p>Нет аккаунта? <a href="../../develop/sign-up/sign-up.html">Зарегестрироватся</a></p>
+            </div>
+        </div>
+    <footer id="footer" class="top-space-lg">
+            <div class="footer-container left-space-lg">
+                <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
+                <img src="/img/093c5882575615f5.png" alt="footer-logo" class="footer-logo top-space-sm">
+            </div>
+            <div class="footer-container left-space-xl">
+                <h3 class="tertiary-heading top-space-lg">Разделы</h3>
+                <a href="#" class="footer-link-text top-space-sm">Каталог</a>
+                <a href="#" class="footer-link-text top-space-sm">Популярное</a>
+                <a href="#" class="footer-link-text top-space-sm">Последние </br> обновления</a>
+            </div>
+            <div class="footer-container left-space-xl">
+                <h3 class="tertiary-heading top-space-lg">Контакты</h3>
+                <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
+            </div>
+        </footer>
+</body>
+</html>

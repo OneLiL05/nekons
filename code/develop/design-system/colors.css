@@ -1,0 +1,14 @@
+:root {
+    --dark-theme-primary-bg-color: #27282c;
+    --dark-theme-sub-text-color: #83848f;
+    --dark-theme-secondary-bg-color: #232526;
+    --dark-theme-primary-text-color: #fff;
+    --accent-color: #0F6FFF;
+    --form-text-color: #63717f;
+    --form-bg-color: #2b303b;
+    --tabs-focus-border: 0 0 0 2px #4F93F7;
+    --primary-active-color: #1E6BDD;
+    --primary-icon-color: #fff;
+    --secondary-icon-color: #83848f;
+    --red-accent-color: #F77069;
+}

@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background: var(--primary-bg-color);
+}
+
+p {
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+    color: var(--white);
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    color: var(--blue);
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+}
+
+a:hover {
+    color: #1E6BDD;
+}
+
+#sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+}
+
+#sign-in .primary-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--primary-heading);
+    color: var(--white);
+}
+
+#sign-in #email-input, #password-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 276px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    outline: none;
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+    border: var(--form-border);
+    background: var(--form-bg);
+    color: var(--form-text);
+    padding: 0 0 0 1em;
+}
+
+#sign-in #email-input:hover, #password-input:hover {
+    transition: var(--transition);
+    box-shadow: var(--form-hover);
+}
+
+#sign-in #email-input:focus, #password-input:focus {
+    transition: var(--transition);
+    border: var(--border);
+}
+
+#sign-in .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#sign-in  .check .check-input {
+    position: absolute;
+            appearance: none;
+       -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#sign-in .check-box  {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -2em;
+    background: var(--white);
+    border-radius: 5px;
+    border: 3px solid var(--blue);
+}
+
+#sign-in .check-input:checked + .check-box {
+    background-color: var(--blue);
+}
+
+#sign-in .check-input:focus + .check-box {
+    box-shadow: var(--focus);
+}
+
+#sign-in .check .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 10px;
+    fill: var(--white);
+}
+
+#sign-in .check .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: var(--simple-text);
+    font-weight: 400;
+}
+
+#sign-in #login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    background-color: var(--blue);
+    font-weight: var(--regular-weight);
+    font-size: var(--simple-text);
+    border-radius: var(--radius-md);
+    color: var(--white);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#sign-in #login-button:hover {
+    transition: var(--transition);
+    box-shadow: var(--hover-item);
+}
+
+#sign-in #login-button:focus {
+    box-shadow: var(--focus);
+}
+
+#sign-in #login-button:focus:active {
+    background-color: var(--primary-active-color);
+    outline: none;
+    box-shadow: none;
+    border: none;
+}

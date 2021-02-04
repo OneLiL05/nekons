@@ -1,0 +1,133 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: var(--primary-bg-color);
+}
+
+#profile {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background: var(--secondary-bg-color);
+}
+
+#profile .profile-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+#profile .profile-block .profile-btn-avatar-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 175px;
+    background: #6F7177;
+    border-radius: var(--radius-xl);
+    box-shadow: -10px -10px 40px rgba(0, 0, 0, 0.1),
+                10px 10px 40px rgba(26, 27, 31, 0.1);
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar:hover {
+    filter: blur(25px rgba(39, 40, 44, 0.2));
+    box-shadow: -10px -10px 40px rgba(0, 0, 0, 0.25),
+                10px 10px 40px rgba(26, 27, 31, 0.5);
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar:hover .change-btn {
+    transition: var(--transition);
+    position: absolute;
+    opacity: 1;
+    z-index: 300;
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar .change-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    gap: 5px;
+    color: var(--white);
+    font-weight: 200;
+    font-size: var(--sub-text);
+    background: var(--blue);
+    border: none;
+    outline: none;
+    opacity: 0;
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar:hover .change-btn:focus {
+    box-shadow: var(--focus);
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar:hover .change-btn:hover {
+    box-shadow: var(--hover);
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar:hover .change-btn:active {
+    background: var(--dark-blue);
+}
+
+#profile .profile-block .profile-btn-avatar-block .profile-block-avatar .change-btn:focus {
+    opacity: 1;
+}
+
+#profile .profile-block .profile-btn-avatar-block .edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 30px;
+    border-radius: 5px;
+    border: var(--border);
+    font-size: var(--simple-text);
+    color: var(--blue);
+    outline: none;
+    background: var(--secondary-bg-color);
+    text-decoration: none;
+    padding: 0;
+}
+
+#profile .profile-block .profile-btn-avatar-block .edit-btn:hover {
+    box-shadow: var(--hover);
+}
+
+#profile .profile-blocxk .profile-btn-avatar-block .edit-btn:focus {
+    box-shadow: var(--focus);
+}
+
+#profile .profile-block .profile-btn-avatar-block .edit-btn:active {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+#profile .profile-text-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#profile .profile-text-block .nickname {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: calc(0.375 * var(--space-unit)) 0 0 0;
+}
+
