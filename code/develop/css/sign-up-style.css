@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: var(--primary-bg-color);
+}
+
+p {
+  font-size: var(--simple-text);
+  font-weight: var(--regular-weight);
+  color: var(--white);
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  color: var(--blue);
+  font-size: var(--simple-text);
+  font-weight: var(--regular-weight);
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+
+a:focus {
+  outline: 1px #0F6FFF;
+}
+
+#sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+}
+
+#sign-up .primary-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--primary-heading);
+  color: var(--white);
+}
+
+#sign-up .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+#sign-up #email-input, #sign-up #password-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  outline: none;
+  font-size: var(--simple-text);
+  font-weight: var(--regular-weight);
+  border: var(--form-border)  ;
+  background: var(--form-bg);
+  color: var(--form-text);
+  padding-left: 1em;
+}
+
+#sign-up #email-input:hover, #sign-up #password-input:hover {
+  transition: var(--transition);
+  box-shadow: var(--form-hover);
+}
+
+#sign-up #email-input:focus, #sign-up #password-input:focus {
+  transition: var(--transition);
+  border: var(--border);
+}
+
+#sign-up .buttons-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+#sign-up .primary-large-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  background-color: var(--blue);
+  font-weight: var(--regular-weight);
+  font-size: var(--simple-text);
+  border-radius: var(--radius-md);
+  color: var(--white);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#sign-up .primary-large-button:hover {
+  transition: var(--transition);
+  box-shadow: var(--hover);
+}
+
+#sign-up .primary-large-button:focus {
+  box-shadow: var(--focus);
+}
+
+#sign-up .primary-large-button:focus:active {
+  background-color: var(--dark-blue);
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+#sign-up .secondary-large-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  background-color: var(--primary-bg-color);
+  font-weight: var(--regular-weight);
+  font-size: var(--simple-text);
+  color: var(--blue);
+  border-radius: var(--radius-md);
+  border: var(--border);
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#sign-up .secondary-large-button:hover {
+  transition: var(--transition);
+  box-shadow: var(--hover);
+}
+
+#sign-up .secondary-large-button:focus {
+  box-shadow: var(--focus)
+}
+
+#sign-up .secondary-large-button:focus:active {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  box-shadow: none;
+}
+
+#sign-up .help-block {
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: var(--regular-font-weight);
+  color: var(--red-accent-color);
+}

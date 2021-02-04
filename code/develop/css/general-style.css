@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background: var(--secondary-bg-color);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#directory, #popular, #last-updates {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: var(--secondary-bg-color);
+    flex-direction: column;
+}
+
+
+#directory .heading-container, #popular .heading-container, #last-updates .heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+#directory .manga-directory, #popular .manga-directory, #last-updates .manga-directory{
+    padding: 0;
+    background: #232526;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    touch-action: pan-x;
+    scroll-direction: horizontal;
+    scrollbar-width: none;
+}
+
+#directory .manga-directory::-webkit-scrollbar,  #popular .manga-directory::-webkit-scrollbar, #last-updates .manga-directory::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+#directory .manga-directory .load-more-item, #popular .manga-directory .load-more-item, #last-updates .manga-directory .load-more-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border-radius: var(--radius-lg);
+    background: var(--blue);
+    box-shadow: -10px -10px 40px rgba(0, 0, 0, 0.1),
+                10px 10px 40px rgba(26, 27, 31, 0.1);
+    margin-right: 50px;
+}
+
+#directory .manga-directory .load-more-item .secondary-heading, #popular .manga-directory .load-more-item .secondary-heading, #last-updates .manga-directory .load-more-item .secondary-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+
+#directory .manga-directory .load-more-item:focus, #popular .manga-directory .load-more-item:focus, #last-updates .manga-directory .load-more-item:focus {
+    border: var(--focus);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.secondary-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simple-text {
+    margin: 1rem 0 0 1rem;
+}
+
+.sub-text {
+    margin: 1rem 0 1rem 1rem;
+}
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 30px;
+    border-radius: var(--radius-sm);
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 var(--space-lg) 0 0;
+}
+
+.load-more:hover {
+    transition: var(--transition);
+    box-shadow: var(--hover);
+}
+
+.load-more:focus {
+    transition: var(--transition);
+    box-shadow: var(--focus);
+}
+
+.load-more:active {
+    transition: var(--transition);
+    background: var(--dark-blue);
+}

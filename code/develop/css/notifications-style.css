@@ -1,0 +1,65 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 190px;
+    background: var(--primary-bg-color);
+}
+
+#header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#notifications {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    max-height: auto;
+    background: var(--secondary-bg-color);
+    flex-direction: column;
+}
+
+.icon-btn {
+    background: var(--primary-bg-color);
+}
+
+.checked-item .icon-btn {
+    background: var(--secondary-bg-color);
+}
+
+
+.item .icon-btn {
+    opacity: 0;
+}
+
+.checked-item .icon-btn {
+    opacity: 0;
+}
+
+.checked-item:hover .icon-btn {
+    position: absolute;
+    opacity: 1;
+    margin-left: 540px;
+}
+
+.checked-item .icon-btn:focus {
+    opacity: 1;
+    border: var(--border);
+    box-sizing: border-box;
+}
+
+.item .icon-btn:focus {
+    opacity: 1;
+    border: var(--border);
+    box-sizing: border-box;
+}
+
+.item:hover .icon-btn {
+    position: absolute;
+    opacity: 1;
+    margin-left: 540px;
+}
