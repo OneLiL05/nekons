@@ -10,7 +10,9 @@
 </head>
 <body>
 <header id="navigation">
-    <img src="" alt="logo" class="logo, right-space-xxl, left-space-xxl">
+    <a href="../general.html" class="logo left-space-xxl">
+        <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
+    </a>
     <nav>
         <a href="../../develop/directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
         <a href="../../develop/popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
@@ -41,12 +43,13 @@
             <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
         </svg>
     </a>
-    <a href="/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+    <a href="sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
         <svg class="icon-sm" aria-hidden="true">
             <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
         </svg>
     </a>
-</header>    <div id="sign-in">
+</header>
+<div id="sign-in">
             <h1 class="primary-heading bottom-space-md">Войти</h1>
             <label class="bottom-space-sm">
                 <p class="top-space-sm bottom-space-xs">Логин</p>
@@ -59,7 +62,7 @@
             <label class="check top-space-sm">
                 <input class="check-input" type="checkbox" name="keep">
                 <span class="check-box right-space-xxs">
-                    <svg class="check-icon" aria-hidden="true">
+                    <svg class="icon-xxs" aria-hidden="true">
                         <use xlink:href="../img/icons/check-icon.svg#check"></use>
                     </svg>
                 </span>
@@ -67,13 +70,15 @@
             </label>
             <button type="submit" class="top-space-md" id="login-button">Войти</button>
             <div class="sign-up top-space-sm">
-                <p>Нет аккаунта? <a href="../../develop/sign-up/sign-up.html">Зарегестрироватся</a></p>
+                <p>Нет аккаунта? <a href="../../develop/sign-up/sign-up.html">Зарегистрироваться</a></p>
             </div>
         </div>
     <footer id="footer" class="top-space-lg">
             <div class="footer-container left-space-lg">
                 <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
-                <img src="/img/093c5882575615f5.png" alt="footer-logo" class="footer-logo top-space-sm">
+                <div class="footer-logo">
+                    <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+                </div>
             </div>
             <div class="footer-container left-space-xl">
                 <h3 class="tertiary-heading top-space-lg">Разделы</h3>

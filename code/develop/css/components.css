@@ -38,10 +38,11 @@ button {
 
 #navigation .logo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-md);
 }
 
 #navigation .nav-text {
@@ -171,6 +172,7 @@ button {
 
 #navigation .icon-btn {
     background: var(--primary-bg-color);
+    border-radius: var(--radius-sm);
 }
 
 #navigation .icon-btn:hover {
