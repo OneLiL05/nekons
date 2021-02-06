@@ -44,7 +44,7 @@
     --dark-blue: #1E6BDD;
     --icon-color: #fff;
     --sub-icon-color: #6F7177;
-    --red-color: #F77069;
+    --red: #F77069;
     /*Properties*/
     --border: 2px solid #0F6FFF;
     --radius-sm: 5px;
@@ -269,12 +269,14 @@
 .icon-xxs {
     width: var(--icon-xxs);
     height: var(--icon-xxs);
+    fill: var(--white);
     cursor: pointer;
 }
 
 .icon-xs {
     width: var(--icon-xs);
     height: var(--icon-xs);
+    fill: var(--white);
     cursor: pointer;
 }
 
@@ -332,46 +334,6 @@
     font-size: var(--tertiary-heading);
     font-weight: var(--bold-weight);
     color: var(--white);
-}
-
-.docs-text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 800px;
-    height: auto;
-    padding: 1rem;
-    font-size: var(--simple-text);
-    line-height: 25px;
-    color: var(--sub-text-color);
-}
-
-.docs-tip {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 800px;
-    height: auto;
-    padding: 1rem;
-    color: #adb8c3;
-    line-height: 20px;
-    font-size: var(--simple-text);
-    border-radius: 10px;
-    border: 3px solid #292f37;
- }
-
-.docs-paragraph {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 800px;
-    height: auto;
-    padding: 0 1rem 0 1rem;
-    font-size: var(--simple-text);
-    line-height: 25px;
-    color: var(--sub-text-color);
-    margin: 0;
 }
 
 .padding {
@@ -492,7 +454,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     border: none;
     outline: none;
 }
