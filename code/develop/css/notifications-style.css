@@ -72,7 +72,7 @@
     height: 60px;
     width: 600px;
     background: var(--secondary-bg-color);
-    gap: var(--space-md);
+    gap: var(--space-sm);
 }
 
 .btn-block {
@@ -98,4 +98,22 @@
 .icon-btn:hover {
     transition: var(--transition);
     background: var(--icon-btn-hover);
+}
+
+.notification-date {
+    display: flex;
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+    color: var(--sub-text-color);
+    text-decoration: none;
+    gap: 1rem;
+    margin-left: 350px;
+}
+
+.checked-item:hover .notification-date {
+    display: none;
+}
+
+.item:hover .notification-date {
+    display: none;
 }

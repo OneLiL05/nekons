@@ -22,11 +22,11 @@
     flex-direction: column;
 }
 
-#read .buttons-block {
-    display: flex;
+.buttons-block {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    display: none;
 }
 
 #read .icon-btn {
@@ -35,4 +35,10 @@
 
 .simple-text {
     margin: 0 1rem 1rem 0;
+}
+
+.item:hover .buttons-block {
+    display: flex;
+    position: absolute;
+    margin-left: 480px;
 }
