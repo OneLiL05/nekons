@@ -140,7 +140,7 @@ z
 
 #sign-in #login-button:hover {
     transition: var(--transition);
-    box-shadow: var(--hover-item);
+    box-shadow: var(--hover);
 }
 
 #sign-in #login-button:focus {
@@ -148,7 +148,7 @@ z
 }
 
 #sign-in #login-button:focus:active {
-    background-color: var(--primary-active-color);
+    background-color: var(--dark-blue);
     outline: none;
     box-shadow: none;
     border: none;
