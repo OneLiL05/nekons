@@ -29,7 +29,7 @@
     display: none;
 }
 
-#read .icon-btn {
+#read .item .icon-btn {
     background: #353639;
 }
 
@@ -41,4 +41,26 @@
     display: flex;
     position: absolute;
     margin-left: 480px;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 60px;
+    width: 600px;
+    background: var(--secondary-bg-color);
+    gap: var(--space-sm);
+}
+
+.more .icon-btn {
+    background: var(--secondary-bg-color);
+}
+
+.more .dropdown-items {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 100px;
 }
