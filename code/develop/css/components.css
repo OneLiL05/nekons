@@ -51,6 +51,11 @@ button {
     border-radius: var(--radius-md);
 }
 
+#navigation .logo:hover {
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1),
+                5px 5px 10px rgba(26, 27, 31, 0.1);
+}
+
 #navigation .nav-text {
     text-decoration: none;
     color: var(--sub-text-color);
