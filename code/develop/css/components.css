@@ -1,3 +1,8 @@
+*:hover {
+    transition: var(--transition);
+    transition-property: color, background-color, border-color;
+}
+
 @font-face {
     font-display: swap;
 }
@@ -33,15 +38,22 @@ button {
     width: 100%;
     height: 75px;
     background-color: var(--primary-bg-color);
+    /*backdrop-filter: saturate(180%) blur(20px);*/
     padding: 0;
 }
 
 #navigation .logo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-md);
+}
+
+#navigation .logo:hover {
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1),
+                5px 5px 10px rgba(26, 27, 31, 0.1);
 }
 
 #navigation .nav-text {
@@ -50,7 +62,6 @@ button {
     font-size: var(--simple-text);
     font-weight: var(--regular-weight);
     margin: 0 0 0 30px;
-    background: var(--primary-bg-color);
 }
 
 #navigation .nav-text:hover {
@@ -171,6 +182,7 @@ button {
 
 #navigation .icon-btn {
     background: var(--primary-bg-color);
+    border-radius: var(--radius-sm);
 }
 
 #navigation .icon-btn:hover {

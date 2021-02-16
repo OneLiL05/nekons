@@ -10,7 +10,9 @@
 </head>
 <body>
 <header id="navigation">
-    <img src="" alt="logo" class="logo, right-space-xxl, left-space-xxl">
+    <a href="../general.html" class="logo left-space-xxl">
+        <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
+    </a>
     <nav>
         <a href="../directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
         <a href="../popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
@@ -31,7 +33,7 @@
             <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
         </svg>
     </button>
-    <a href="/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
+    <a href="bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
         <svg class="icon-sm" aria-hidden="true">
             <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
         </svg>
@@ -41,7 +43,7 @@
             <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
         </svg>
     </a>
-    <a href="../../release/sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+    <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
         <svg class="icon-sm" aria-hidden="true">
             <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
         </svg>
@@ -66,7 +68,20 @@
         </div>
     </div>
     <div id="read">
-        <div class="items top-space-lg">
+        <div class="more m0">
+            <div class="dropdown">
+                <button class="icon-btn right-space-md" onclick="" aria-label="Прочитанное или нет">
+                    <svg class="icon-sm m0" aria-hidden="true">
+                        <use xlink:href="../img/icons/burger-icon.svg#burger"></use>
+                    </svg>
+                </button>
+                <div class="dropdown-items">
+                    <button class="dropdown-item">По названию</button>
+                    <button class="dropdown-item">По дате добавления</button>
+                </div>
+            </div>
+        </div>
+        <div class="items top-space-sm">
             <a href="#" class="item ">
                 <div class="item-block">
                     <div class="item-img"></div>
@@ -87,7 +102,7 @@
                             <button class="dropdown-item">Прочитано</button>
                             <button class="dropdown-item">Отложено</button>
                             <button class="dropdown-item">Брошено</button>
-                            <button class="dropdown-item">Не интерестно</button>
+                            <button class="dropdown-item">Не интересно</button>
                         </div>
                     </div>
                     <button class="icon-btn right-space-md" onclick="" aria-label="Удалить">
@@ -117,7 +132,7 @@
                             <button class="dropdown-item">Прочитано</button>
                             <button class="dropdown-item">Отложено</button>
                             <button class="dropdown-item">Брошено</button>
-                            <button class="dropdown-item">Не интерестно</button>
+                            <button class="dropdown-item">Не интересно</button>
                         </div>
                     </div>
                     <button class="icon-btn right-space-md" onclick="" aria-label="Удалить">
@@ -163,7 +178,9 @@
     <footer id="footer" class="top-space-lg">
         <div class="footer-container left-space-lg">
             <p class="tertiary-heading top-space-lg">Neko no Shinden</p>
-            <img src="/img/093c5882575615f5.png" alt="footer-logo" class="footer-logo top-space-sm">
+            <div class="footer-logo">
+                <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+            </div>
         </div>
         <div class="footer-container left-space-xl">
             <p class="tertiary-heading top-space-lg">Разделы</p>

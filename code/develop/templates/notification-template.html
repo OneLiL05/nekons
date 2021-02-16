@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/sign-up-style.css">
-    <link rel="stylesheet" href="../css/design-system.css">
+    <title>Уведомление</title>
+    <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/notification-template-style.css">
 </head>
 <body>
-<header id="navigation">
+    <header id="navigation">
     <a href="../general.html" class="logo left-space-xxl">
         <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
     </a>
@@ -43,57 +43,53 @@
             <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
         </svg>
     </a>
-    <a href="../sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+    <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
         <svg class="icon-sm" aria-hidden="true">
             <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
         </svg>
     </a>
 </header>
-<div id="sign-up">
-    <h1 class="primary-heading bottom-space-md">Регистрация</h1>
-    <form action="" method="post">
-        <div class="form-group bottom-space-xs">
-            <label>
-                <p class="top-space-sm bottom-space-xs">Логин</p>
-                <input type="text" name="username" id="email-input" placeholder="Логин" inputmode="email" aria-label="Введите логин">
-                <span class="help-block top-space-xs"></span>
-            </label>
+    <div id="notification">
+        <div class="notification-bar">
+            <a href="../notifications/notifications.html" class="icon-text-btn left-space-lg" aria-label="Назад">
+                <svg class="icon-xxs" aria-hidden="true">
+                    <use xlink:href="../img/icons/left-arrow-icon.svg#left-arrow"></use>
+                </svg>
+                Назад
+            </a>
+            <div class="btn-block row right-space-lg">
+                <button class="icon-text-btn" aria-label="Отметить как прочитанное">
+                    <svg class="icon-xxs" aria-hidden="true">
+                        <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                    </svg>
+                    Прочитано
+                </button>
+                <button class="icon-btn-sm" aria-label="Закрыть">
+                    <svg class="icon-xxs" aria-hidden="true">
+                        <use xlink:href="../img/icons/close-icon.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="form-group bottom-space-xs">
-            <label>
-                <p class="top-space-sm bottom-space-xs">Пароль</p>
-                <input type="password" name="password" id="password-input" placeholder="Пароль" aria-label="Введите пароль">
-                <span class="help-block top-space-xs"></span>
-            </label>
+        <div class="main-content top-space-lg">
+
         </div>
-        <div class="form-group">
-            <label>
-                <p class="top-space-sm bottom-space-xs">Повтор пароля</p>
-                <input type="password" name="confirm_password" id="password-input" placeholder="Повторите пароль" aria-label="Повторите пароль">
-                <span class="help-block top-space-xs"></span>
-            </label>
-        </div>
-        <div class="buttons-group top-space-md">
-            <button type="submit" class="primary-large-button">Зарегистрироваться</button>
-            <button type="reset" class="secondary-large-button ">Очистить</button>
-        </div>
-        <div class="sign-up top-space-sm">
-            <p>Уже есть аккаунт? <a href="../sign-in/sign-in.html">Войти</a></p>
-        </div>
-</div>
+    </div>
     <footer id="footer" class="top-space-lg">
     <div class="footer-container left-space-lg">
-        <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
-        <img src="/img/093c5882575615f5.png" alt="footer-logo" class="footer-logo top-space-sm">
+        <p class="tertiary-heading top-space-lg">Neko no Shinden</p>
+        <div class="footer-logo">
+            <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+        </div>
     </div>
     <div class="footer-container left-space-xl">
-        <h3 class="tertiary-heading top-space-lg">Разделы</h3>
+        <p class="tertiary-heading top-space-lg">Разделы</p>
         <a href="#" class="footer-link-text top-space-sm">Каталог</a>
         <a href="#" class="footer-link-text top-space-sm">Популярное</a>
         <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
     </div>
     <div class="footer-container left-space-xl">
-        <h3 class="tertiary-heading top-space-lg">Контакты</h3>
+        <p class="tertiary-heading top-space-lg">Контакты</p>
         <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
     </div>
 </footer>
