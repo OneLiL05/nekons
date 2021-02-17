@@ -43,47 +43,58 @@
             <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
         </svg>
     </a>
-    <a href="../../release/sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+    <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
         <svg class="icon-sm" aria-hidden="true">
             <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
         </svg>
     </a>
 </header>
-<div id="header">
+    <div id="header">
         <span class="header-container">
             <svg class="icon-md">
                 <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
             </svg>
             <h1 class="primary-heading left-space-xxs">Профиль</h1>
         </span>
-    </div>
-    <div id="profile">
-        <div class="profile-block top-space-lg">
-            <div class="profile-btn-avatar-block left-space-xxl">
-                <div class="profile-block-avatar">
-                    <button class="change-btn">
-                        Изменить
+        <div class="profile-general top-space-lg">
+            <div class="profile-general-info">
+                <div class="profile-img">
+                    <button class="border-icon-btn" aria-label="Изменить аватар">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/edit-icon.svg#edit"></use>
+                        </svg>
                     </button>
                 </div>
-                <a href="../profile-settings/profile-settings.html" class="edit-btn top-space-md">Настройки</a>
+                <div class="item-text">
+                    <p class="tertiary-heading m0">Vasily Pumpkin</p>
+                    <p class="sub-text">ID: 1111</p>
+                </div>
             </div>
-            <div class="left-space-lg profile-text-block">
-                <p class="nickname primary-heading">$(nickname)</p>
-            </div>
+            <a href="../profile-settings/profile-settings.html" class="secondary-btn-sm">Настройки</a>
+        </div>
+    </div>
+    <div id="profile">
+        <div class="tabs top-space-lg" role="tab">
+            <button class="first-tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к читаемой манге">Читает</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к манге, которую собираетесь читать">Будет читать</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к прочитанной манге">Прочитано</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к отложенной манге">Отложено</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к отложенной манге">Брошено</button>
+            <button class="last-tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к не интерестной манге">Не интерестно</button>
         </div>
     </div>
     <footer id="footer" class="top-space-lg">
         <div class="footer-container left-space-lg">
             <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
             <div class="footer-logo">
-                <img src="img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+                <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
             </div>
         </div>
         <div class="footer-container left-space-xl">
             <h3 class="tertiary-heading top-space-lg">Разделы</h3>
             <a href="#" class="footer-link-text top-space-sm">Каталог</a>
             <a href="#" class="footer-link-text top-space-sm">Популярное</a>
-            <a href="#" class="footer-link-text top-space-sm">Последние </br> обновления</a>
+            <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
         </div>
         <div class="footer-container left-space-xl">
             <h3 class="tertiary-heading top-space-lg">Контакты</h3>

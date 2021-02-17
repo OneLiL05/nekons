@@ -4,13 +4,23 @@
     justify-content: center;
     width: 100%;
     height: 100px;
-    background: var(--dark-theme-primary-bg-color);
+    background: var(--primary-bg-color);
 }
 
 #profile-settings {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
     height: 600px;
-    background: var(--dark-theme-secondary-bg-color);
+    background: var(--secondary-bg-color);
+}
+
+#profile-settings .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1050px;
+    height: auto;
+    padding: 2rem;
 }

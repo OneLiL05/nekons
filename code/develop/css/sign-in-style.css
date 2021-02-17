@@ -60,7 +60,7 @@ a:hover {
     color: var(--form-text);
     padding: 0 0 0 1em;
 }
-z
+
 #sign-in #email-input:hover, #password-input:hover {
     transition: var(--transition);
     box-shadow: var(--form-hover);
