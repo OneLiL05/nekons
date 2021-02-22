@@ -19,13 +19,13 @@ p {
 a {
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  color: var(--blue);
+  color: var(--accent-color);
   font-size: var(--simple-text);
   font-weight: var(--regular-weight);
 }
 
 a:hover {
-  color: var(--dark-blue);
+  color: var(--dark-accent);
 }
 
 a:focus {
@@ -96,7 +96,7 @@ a:focus {
   justify-content: center;
   width: 300px;
   height: 40px;
-  background-color: var(--blue);
+  background-color: var(--accent-color);
   font-weight: var(--regular-weight);
   font-size: var(--simple-text);
   border-radius: var(--radius-md);
@@ -117,7 +117,7 @@ a:focus {
 }
 
 #sign-up .primary-large-button:focus:active {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-accent);
   outline: none;
   box-shadow: none;
   border: none;
@@ -132,7 +132,7 @@ a:focus {
   background-color: var(--primary-bg-color);
   font-weight: var(--regular-weight);
   font-size: var(--simple-text);
-  color: var(--blue);
+  color: var(--accent-color);
   border-radius: var(--radius-md);
   border: var(--border);
   outline: none;
@@ -150,7 +150,7 @@ a:focus {
 }
 
 #sign-up .secondary-large-button:focus:active {
-  background-color: var(--blue);
+  background-color: var(--accent-color);
   color: var(--white);
   border: none;
   box-shadow: none;

@@ -1,10 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Манга</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/components.css" type="text/css">
+    <link rel="stylesheet" href="../css/design-system.css" type="text/css">
+    <link rel="stylesheet" href="../css/manga-template-style.css" type="text/css">
 </head>
-<body>
-
+<body class="dark-theme">
+    <header id="navigation">
+    <a href="../general.html" class="logo left-space-xxl">
+        <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
+    </a>
+    <nav>
+        <a href="../directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
+        <a href="../popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
+        <a href="../last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
+    </nav>
+    <form action="">
+        <label>
+            <input type="search" id="search-input" required placeholder="Что ищем?" class="left-space-xxl">
+            <button class="right-space-lg" id="search-button" type="submit" aria-label="Поиск">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/search-icon.svg#search"></use>
+                </svg>
+            </button>
+        </label>
+    </form>
+    <button class="icon-btn left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+        </svg>
+    </button>
+    <a href="../bookmarks/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
+        </svg>
+    </a>
+    <a href="../notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
+        </svg>
+    </a>
+    <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+        <svg class="icon-sm" aria-hidden="true">
+            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+        </svg>
+    </a>
+</header>
+    <main id="manga-description">
+        <div class="description-block">
+            <div class="manga-item-img"></div>
+            <button class="primary-btn-md top-space-sm" aria-label="Читать">Читать</button>
+            <div class="dropdown">
+                <button class="secondary-btn-md top-space-sm" aria-label="Добавить в закладки">Добавить в закладки</button>
+                <div class="dropdown-items">
+                    <button class="dropdown-item">Буду читать</button>
+                    <button class="dropdown-item">Прочитано</button>
+                    <button class="dropdown-item">Отложено</button>
+                    <button class="dropdown-item">Брошено</button>
+                    <button class="dropdown-item">Не интересно</button>
+                </div>
+            </div>
+        </div>
+        <div class="description-block">
+            <div class="description-heading-rating">
+                <div class="description-heading">
+                    <h3 class="tertiary-heading top-space-sm">Связанные пеплом</h3>
+                    <p class="pre-text top-space-xs">Musubaru Yakeato</p>
+                </div>
+                <div class="description-rating">
+                    <p class="simple-text">4.9/5</p>
+                    <button class="icon-text-btn left-space-sm">
+                        <svg class="icon-xxs" aria-disabled="true">
+                            <use xlink:href="../img/icons/star-icon.svg#star"></use>
+                        </svg>
+                        Оценить
+                    </button>
+                </div>
+            </div>
+            <div class="description-info top-space-xs">
+                <div class="description-sub-info">
+                    <p class="sub-text">Тип:</p>
+                    <a href="#" class="sub-text">Манга</a>
+                </div>
+                <div class="description-sub-info">
+                    <p class="sub-text">Год:</p>
+                    <a href="#" class="sub-text">2017</a>
+                </div>
+                <div class="description-sub-info">
+                    <p class="sub-text">Статус тайтла:</p>
+                    <a href="#" class="sub-text">Онгоинг</a>
+                </div>
+                <div class="description-sub-info">
+                    <p class="sub-text">Статус перевода:</p>
+                    <a href="#" class="sub-text">Продолжается</a>
+                </div>
+            </div>
+            <div class="description-sub-block">
+                <p class="simple-text m0">1945, Уэно. Души тех, кто потерял все, медленно тлеют на руинах, оставленных войной.<br>
+                    Канэкичи, военный сирота, потерявший семью, продолжает бороться с отчаянием. При неожиданных стечений обстоятельств, молодой человек, Канаида Синдзи, помогает мальчику уйти от преследования. Заставленный врасплох, он не верит своему спасению, но после череды ужасных событий, он открывает свое загрубевшее сердце новому знакомому. И так начинается их история.</p>
+            </div>
+            <div class="description-sub-block top-space-sm">
+                <button class="tag">Боевик</button>
+                <button class="tag">Драма</button>
+                <button class="tag">История</button>
+                <button class="tag">Сэйнэн</button>
+                <button class="tag">Война</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="top-space-lg">
+        <div class="footer-container left-space-lg">
+            <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
+            <div class="footer-logo">
+                <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+            </div>
+        </div>
+        <div class="footer-container left-space-xl">
+            <h3 class="tertiary-heading top-space-lg">Разделы</h3>
+            <a href="#" class="footer-link-text top-space-sm">Каталог</a>
+            <a href="#" class="footer-link-text top-space-sm">Популярное</a>
+            <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
+        </div>
+        <div class="footer-container left-space-xl">
+            <h3 class="tertiary-heading top-space-lg">Контакты</h3>
+            <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
+        </div>
+    </footer>
 </body>
 </html>

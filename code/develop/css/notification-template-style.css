@@ -25,11 +25,11 @@
 }
 
 .icon-btn-sm:hover .icon-xxs {
-    fill: var(--blue);
+    fill: var(--accent-color);
 }
 
 .icon-text-btn:hover .icon-xxs {
-    fill: var(--blue);
+    fill: var(--accent-color);
 }
 
 .main-content {
