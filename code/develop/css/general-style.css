@@ -31,7 +31,7 @@ label {
 
 #directory .manga-directory, #popular .manga-directory, #last-updates .manga-directory{
     padding: 0;
-    background: var(--primary-bg-color);
+    background: var(--secondary-bg-color);
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
