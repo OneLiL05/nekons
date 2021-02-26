@@ -90,9 +90,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 750px;
-    height: 50px;
-    gap: 1rem;
+    height: auto;
+    gap: 0.5rem;
+    line-height: 1.2rem;
 }
 
 .description-info .description-sub-info {
@@ -107,4 +109,34 @@
 
 .description-info .description-sub-info .sub-text:last-child:hover {
     color: var(--accent-color);
+}
+
+#chapters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    background: var(--secondary-bg-color);
+}
+
+.more {
+    width: 800px;
+}
+
+#chapters .item {
+    width: 800px;
+}
+
+.date {
+    margin-left: 520px;
+}
+
+.item:hover .simple-text {
+    color: var(--accent-color);
+}
+
+.item:hover .date {
+    display: flex;
 }

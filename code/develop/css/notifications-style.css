@@ -98,22 +98,3 @@
     transition: var(--transition);
     background: var(--icon-btn-hover);
 }
-
-.notification-date {
-    display: flex;
-    font-size: var(--simple-text);
-    font-weight: var(--regular-weight);
-    color: var(--sub-text-color);
-    text-decoration: none;
-    gap: 1rem;
-    margin-left: 350px;
-}
-
-.checked-item:hover .notification-date {
-    transition: visibility .4ms;
-    display: none;
-}
-
-.item:hover .notification-date {
-    display: none;
-}
