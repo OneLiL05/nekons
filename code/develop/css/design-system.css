@@ -1048,7 +1048,7 @@ body {
 .more {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
     height: 60px;
     width: 600px;

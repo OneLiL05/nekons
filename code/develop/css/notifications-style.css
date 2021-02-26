@@ -93,8 +93,3 @@
     flex-direction: column;
     margin-top: 100px;
 }
-
-.icon-btn:hover {
-    transition: var(--transition);
-    background: var(--icon-btn-hover);
-}

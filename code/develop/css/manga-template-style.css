@@ -123,18 +123,21 @@
 
 .more {
     width: 800px;
+    align-items: flex-start;
 }
 
 #chapters .item {
     width: 800px;
 }
 
-.date {
-    margin-left: 520px;
-}
-
 .item:hover .simple-text {
     color: var(--accent-color);
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    margin-left: 520px;
 }
 
 .item:hover .date {
