@@ -1,0 +1,110 @@
+#manga-description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    background: var(--primary-bg-color);
+    padding: 2rem 0 2rem 0;
+}
+
+.description-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    padding: 0 1rem 0 1rem;
+    flex-direction: column;
+}
+
+.description-block:first-child {
+    margin-left: var(--space-xxl);
+    padding: 0;
+}
+
+.manga-item-img {
+    width: 200px;
+    height: 225px;
+    border-radius: var(--radius-xl);
+    margin: 0;
+}
+
+#manga-description .dropdown-items {
+    margin-top: 200px;
+}
+
+.description-sub-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.pre-text {
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--sub-text-color);
+}
+
+.description-sub-block .simple-text {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 750px;
+    line-height: 1.6rem;
+}
+
+.description-heading-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 750px;
+    height: 60px;
+}
+
+.description-heading-rating .description-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description-heading-rating .description-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.description-heading-rating .description-rating .icon-text-btn {
+    margin-right: 1rem;
+}
+
+.icon-text-btn:hover .icon-xxs {
+    fill: var(--accent-color);
+}
+
+.description-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 750px;
+    height: 50px;
+    gap: 1rem;
+}
+
+.description-info .description-sub-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.description-info .description-sub-info .sub-text:first-child {
+    margin-right: var(--space-xxxs);
+    color: var(--white);
+}
+
+.description-info .description-sub-info .sub-text:last-child:hover {
+    color: var(--accent-color);
+}

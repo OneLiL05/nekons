@@ -43,6 +43,10 @@
     margin-left: 480px;
 }
 
+#read .items .item .buttons-block .icon-btn:last-child:hover .icon-sm {
+    fill: var(--red);
+}
+
 .more {
     display: flex;
     align-items: center;
