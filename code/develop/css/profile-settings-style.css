@@ -9,18 +9,69 @@
 
 #profile-settings {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     width: 100%;
     height: 600px;
     background: var(--secondary-bg-color);
 }
 
+#profile-settings .sidebar {
+    display: flex;
+    align-items: c;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 20%;
+    height: 600px;
+    background: var(--secondary-bg-color);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+#profile-settings .sidebar .tertiary-btn-md {
+    display: flex;
+    justify-content: flex-start;
+    width: 185px;
+    padding-left: 15px;
+}
+
+
 #profile-settings .content {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    width: 1050px;
-    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    height: 600px;
     padding: 2rem;
+    background: var(--secondary-bg-color);
+}
+
+#profile-settings .content .content-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    background: var(--form-bg);
+    border-radius: var(--radius-sm);
+    border: var(--form-border);
+    outline: none;
+    padding-left: 10px;
+    color: var(--sub-text-color);
+    margin-bottom: 20px;
+}
+
+.input:hover {
+    box-shadow: var(--item-hover);
+}
+
+.input:focus {
+    border: var(--border);
 }

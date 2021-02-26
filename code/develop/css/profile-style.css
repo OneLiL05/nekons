@@ -51,3 +51,8 @@
     position: absolute;
     opacity: 1;
 }
+
+#profile .item {
+    display: flex;
+    justify-content: flex-start;
+}
