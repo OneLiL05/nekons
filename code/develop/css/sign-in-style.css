@@ -95,6 +95,10 @@ a:hover {
     border: 3px solid var(--accent-color);
 }
 
+#sign-in .check-box .icon-xxs {
+    fill: var(--white);
+}
+
 #sign-in .check-input:checked + .check-box {
     background-color: var(--accent-color);
 }

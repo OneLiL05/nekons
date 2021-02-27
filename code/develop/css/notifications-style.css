@@ -79,6 +79,10 @@
     flex-direction: row;
 }
 
+.btn-block .icon-btn:last-child:hover .icon-sm{
+    fill: var(--red);
+}
+
 .more .icon-btn {
     display: flex;
     align-items: center;
@@ -87,9 +91,18 @@
     background: var(--secondary-bg-color);
 }
 
+.more .icon-btn:hover {
+    background: var(--icon-btn-hover);
+}
+
 .more .dropdown-items {
     display: none;
     position: absolute;
     flex-direction: column;
     margin-top: 100px;
+}
+
+.checked-item .icon-btn:hover .icon-sm,
+.checked-item .icon-btn:focus .icon-sm{
+    fill: var(--red);
 }

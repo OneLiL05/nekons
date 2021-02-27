@@ -29,8 +29,8 @@
     display: none;
 }
 
-#read .item .icon-btn {
-    background: #353639;
+.item .icon-btn {
+    background: var(--primary-bg-color);
 }
 
 .simple-text {

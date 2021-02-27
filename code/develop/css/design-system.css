@@ -290,6 +290,8 @@ body {
     font-size: var(--primary-heading);
     font-weight: var(--black-weight);
     color: var(--white);
+    text-decoration: none;
+
 }
 
 .secondary-heading {
@@ -297,6 +299,7 @@ body {
     font-size: var(--secondary-heading);
     font-weight: var(--bold-weight);
     color: var(--white);
+    text-decoration: none;
 }
 
 .tertiary-heading {
@@ -304,6 +307,7 @@ body {
     font-size: var(--tertiary-heading);
     font-weight: var(--bold-weight);
     color: var(--white);
+    text-decoration: none;
 }
 
 .padding {
@@ -472,6 +476,10 @@ body {
     font-weight: var(--medium-weight);
     color: var(--white);
     text-decoration: none;
+}
+
+.pre-text:hover {
+    color: var(--accent-color);
 }
 
 .icon-btn {
@@ -761,6 +769,14 @@ body {
     box-shadow: var(--item-shadow);
 }
 
+.manga-item:hover {
+    box-shadow: var(--item-hover);
+}
+
+.manga-item:hover .simple-text{
+    color: var(--accent-color);
+}
+
 .manga-item:focus {
     border: var(--border);
     outline: none;
@@ -967,7 +983,7 @@ body {
     box-shadow: none;
 }
 
-.primary-button-sm, .secondary-btn-sm, .tertiary-btn-sm {
+.primary-btn-sm, .secondary-btn-sm, .tertiary-btn-sm {
     width: 100px;
     height: 30px;
     font-size: var(--sub-text);
@@ -978,7 +994,7 @@ body {
     height: 35px;
 }
 
-.primary-button-lg, .secondary-btn-lg .tertiary-btn-lg {
+.primary-btn-lg, .secondary-btn-lg, .tertiary-btn-lg {
     width: 300px;
     height: 40px;
 }
@@ -1084,4 +1100,8 @@ body {
 
 .item:hover .date {
     display: none;
+}
+
+.more .icon-btn:hover {
+    background: var(--icon-btn-hover);
 }
