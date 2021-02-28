@@ -29,8 +29,8 @@
     display: none;
 }
 
-#read .item .icon-btn {
-    background: #353639;
+.item .icon-btn {
+    background: var(--primary-bg-color);
 }
 
 .simple-text {
@@ -43,28 +43,7 @@
     margin-left: 480px;
 }
 
-#read .items .item .buttons-block .icon-btn:last-child:hover .icon-sm {
+#read .items .item .buttons-block .icon-btn:last-child:hover .icon-sm,
+#read .items .item .buttons-block .icon-btn:last-child:focus .icon-sm {
     fill: var(--red);
-}
-
-.more {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    height: 60px;
-    width: 600px;
-    background: var(--secondary-bg-color);
-    gap: var(--space-sm);
-}
-
-.more .icon-btn {
-    background: var(--secondary-bg-color);
-}
-
-.more .dropdown-items {
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    margin-top: 100px;
 }

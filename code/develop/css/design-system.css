@@ -50,6 +50,10 @@
     --transition: .2s cubic-bezier(.3,0,.5,1);
 }
 
+body {
+
+}
+
 .dark-theme {
     --primary-bg-color: #27282c;
     --secondary-bg-color: #232526;
@@ -90,7 +94,6 @@
 
 /*Spacing classes*/
 
-/*Top Space*/
 
 .top-space-xxxxs {
     margin: var(--space-xxxxs) 0 0 0;
@@ -277,61 +280,9 @@
     margin: 0 0 var(--space-xxxl) 0;
 }
 
-/*Icon classes*/
 
-.icon-xxxs {
-    width: var(--icon-xxxs);
-    height: var(--icon-xxxs);
-    cursor: pointer;
-}
+/*Top Space*/
 
-.icon-xxs {
-    width: var(--icon-xxs);
-    height: var(--icon-xxs);
-    fill: var(--white);
-    cursor: pointer;
-}
-
-.icon-xs {
-    width: var(--icon-xs);
-    height: var(--icon-xs);
-    fill: var(--white);
-    cursor: pointer;
-}
-
-.icon-sm {
-    width: var(--icon-sm);
-    height: var(--icon-sm);
-    fill: var(--sub-icon-color);
-    cursor: pointer;
-}
-
-.icon-md {
-    width: var(--icon-md);
-    height: var(--icon-md);
-    fill: var(--white);
-    cursor: pointer;
-}
-
-.icon-lg {
-    width: var(--icon-lg);
-    height: var(--icon-lg);
-}
-
-.icon-xl {
-    width: var(--icon-xl);
-    height: var(--icon-xl);
-}
-
-.icon-xxl {
-    width: var(--icon-xxl);
-    height: var(--icon-xxl);
-}
-
-.icon-xxxl {
-    width: var(--icon-xxxl);
-    height: var(--icon-xxxl);
-}
 /*Typography styles*/
 
 .primary-heading {
@@ -339,6 +290,8 @@
     font-size: var(--primary-heading);
     font-weight: var(--black-weight);
     color: var(--white);
+    text-decoration: none;
+
 }
 
 .secondary-heading {
@@ -346,6 +299,7 @@
     font-size: var(--secondary-heading);
     font-weight: var(--bold-weight);
     color: var(--white);
+    text-decoration: none;
 }
 
 .tertiary-heading {
@@ -353,6 +307,7 @@
     font-size: var(--tertiary-heading);
     font-weight: var(--bold-weight);
     color: var(--white);
+    text-decoration: none;
 }
 
 .padding {
@@ -411,6 +366,54 @@
 
 .padding-left-md {
     padding-left: var(--space-md);
+}
+
+
+.icon-xxxs {
+    width: var(--icon-xxxs);
+    height: var(--icon-xxxs);
+}
+
+.icon-xxs {
+    width: var(--icon-xxs);
+    height: var(--icon-xxs);
+}
+
+.icon-xs {
+    width: var(--icon-xs);
+    height: var(--icon-xs);
+}
+
+.icon-sm {
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+    fill: var(--sub-icon-color);
+}
+
+.icon-md {
+    width: var(--icon-md);
+    height: var(--icon-md);
+    fill: var(--icon-color);
+}
+
+.icon-lg {
+    width: var(--icon-lg);
+    height: var(--icon-lg);
+}
+
+.icon-xl {
+    width: var(--icon-xl);
+    height: var(--icon-xl);
+}
+
+.icon-xxl {
+    width: var(--icon-xxl);
+    height: var(--icon-xxl);
+}
+
+.icon-xxxl {
+    width: var(--icon-xxxl);
+    height: var(--icon-xxxl);
 }
 
 .mt0 {
@@ -473,6 +476,10 @@
     font-weight: var(--medium-weight);
     color: var(--white);
     text-decoration: none;
+}
+
+.pre-text:hover {
+    color: var(--accent-color);
 }
 
 .icon-btn {
@@ -762,6 +769,14 @@
     box-shadow: var(--item-shadow);
 }
 
+.manga-item:hover {
+    box-shadow: var(--item-hover);
+}
+
+.manga-item:hover .simple-text{
+    color: var(--accent-color);
+}
+
 .manga-item:focus {
     border: var(--border);
     outline: none;
@@ -968,7 +983,7 @@
     box-shadow: none;
 }
 
-.primary-button-sm, .secondary-btn-sm, .tertiary-btn-sm {
+.primary-btn-sm, .secondary-btn-sm, .tertiary-btn-sm {
     width: 100px;
     height: 30px;
     font-size: var(--sub-text);
@@ -979,7 +994,7 @@
     height: 35px;
 }
 
-.primary-button-lg, .secondary-btn-lg .tertiary-btn-lg {
+.primary-btn-lg, .secondary-btn-lg, .tertiary-btn-lg {
     width: 300px;
     height: 40px;
 }
@@ -1044,4 +1059,49 @@
 .tag:focus, .icon-text-btn:focus {
     border: var(--border);
     box-shadow: var(--focus);
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+    width: 600px;
+    background: var(--secondary-bg-color);
+    gap: var(--space-sm);
+}
+
+.more .icon-btn {
+    background: var(--secondary-bg-color);
+}
+
+.more .dropdown-items {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.date {
+    display: flex;
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+    color: var(--sub-text-color);
+    text-decoration: none;
+    gap: 1rem;
+    margin-left: 350px;
+}
+
+.checked-item:hover .date {
+    transition: visibility .4ms;
+    display: none;
+}
+
+.item:hover .date {
+    display: none;
+}
+
+.more .icon-btn:hover {
+    background: var(--icon-btn-hover);
 }

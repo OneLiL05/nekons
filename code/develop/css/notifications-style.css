@@ -79,12 +79,20 @@
     flex-direction: row;
 }
 
+.btn-block .icon-btn:last-child:hover .icon-sm{
+    fill: var(--red);
+}
+
 .more .icon-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     fill: #6f7177;
     background: var(--secondary-bg-color);
+}
+
+.more .icon-btn:hover {
+    background: var(--icon-btn-hover);
 }
 
 .more .dropdown-items {
@@ -94,26 +102,7 @@
     margin-top: 100px;
 }
 
-.icon-btn:hover {
-    transition: var(--transition);
-    background: var(--icon-btn-hover);
-}
-
-.notification-date {
-    display: flex;
-    font-size: var(--simple-text);
-    font-weight: var(--regular-weight);
-    color: var(--sub-text-color);
-    text-decoration: none;
-    gap: 1rem;
-    margin-left: 350px;
-}
-
-.checked-item:hover .notification-date {
-    transition: visibility .4ms;
-    display: none;
-}
-
-.item:hover .notification-date {
-    display: none;
+.checked-item .icon-btn:hover .icon-sm,
+.checked-item .icon-btn:focus .icon-sm{
+    fill: var(--red);
 }
