@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаблон главы манги</title>
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/manga-chapter-template-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme blue">
+    <header id="navigation" class="bottom-space-md">
+        <div class="group left-space-xxl">
+            <a href="../../../general.html" class="logo">
+                <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
+            </a>
+            <a href="manga-template.html" class="pre-text left-space-md">Манга</a>
+        </div>
+        <div class="group">
+            <button class="icon-btn">
+                <svg class="icon-sm" aria-disabled="true">
+                    <use xlink:href="../img/icons/left-arrow-icon.svg#left-arrow"></use>
+                </svg>
+            </button>
+            <div class="dropdown-click">
+                <button class="tertiary-btn-sm drop-btn" onclick="myFunction()">Глава 5</button>
+                <div class="dropdown-items" id="drop">
+                    <a href="#" class="dropdown-item">Глава 5</a>
+                    <a href="#" class="dropdown-item">Глава 4</a>
+                    <a href="#" class="dropdown-item">Глава 3</a>
+                    <a href="#" class="dropdown-item">Глава 2</a>
+                    <a href="#" class="dropdown-item">Глава 1</a>
+                </div>
+            </div>
+            <button class="icon-btn">
+                    <svg class="icon-sm" aria-disabled="true">
+                    <use xlink:href="../img/icons/right-arrow-icon.svg#right-arrow"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="group right-space-xxl">
+            <div class="dropdown">
+                <button class="secondary-btn-sm">В закладки</button>
+                <div class="dropdown-items">
+                    <button class="dropdown-item">Буду читать</button>
+                    <button class="dropdown-item">Прочитано</button>
+                    <button class="dropdown-item">Отложено</button>
+                    <button class="dropdown-item">Брошено</button>
+                    <button class="dropdown-item">Не интересно</button>
+                </div>
+            </div>
+            <button class="icon-btn left-space-md" aria-label="Перейти на страницу смены цветовой темы сайта">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+                </svg>
+            </button>
+            <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main id="chapter">
+        <div class="more bottom-space-sm">
+            <div class="group">
+                <button class="icon-btn">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use xlink:href="../img/icons/left-arrow-icon.svg#left-arrow"></use>
+                    </svg>
+                </button>
+                <div class="dropdown-click">
+                    <button class="tertiary-btn-sm drop-btn1">Страница 5</button>
+                    <div class="dropdown-items">
+                        <a href="#" class="dropdown-item">Страница 5</a>
+                        <a href="#" class="dropdown-item">Страница 4</a>
+                        <a href="#" class="dropdown-item">Страница 3</a>
+                        <a href="#" class="dropdown-item">Страница 2</a>
+                        <a href="#" class="dropdown-item">Страница 1</a>
+                    </div>
+                </div>
+                <!--        Тут должен быть тот же выпадающий список что и с главами, но мне впадлу дописывать функцию        -->
+                <button class="icon-btn">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use xlink:href="../img/icons/right-arrow-icon.svg#right-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="pages bottom-space-lg">
+            <div class="page"></div>
+        </div>
+        <div class="comments">
+            <div class="comments-content">
+                <h3 class="tertiary-heading m0">Комментарии</h3>
+                <div class="more top-space-sm">
+                    <button class="tertiary-btn-sm" aria-label="Сортировать сообщения">Новые</button>
+                    <button class="tertiary-btn-sm" aria-label="Перейти к настройкам сообщений">Настройки</button>
+                </div>
+                <div class="group top-space-sm">
+                    <form action="">
+                        <label for="comment" class="group">
+                            <textarea class="comment-input" id="comment" placeholder="Комментарий"></textarea>
+                            <button class="primary-icon-btn left-space-md" aria-label="Отправить комментарий">
+                                <svg class="icon-sm" aria-hidden="true">
+                                    <use xlink:href="../img/icons/send-icon.svg#send"></use>
+                                </svg>
+                            </button>
+                        </label>
+                    </form>
+                </div>
+        </div>
+            <div class="items top-space-sm">
+                <div class="comment-item">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Короткий комментарий</p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Длинный комментарий</p>
+                    </div>
+                </div>
+                <div class="replied-comment-item">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Ответ</p>
+                    </div>
+                </div>
+                <div class="replied-comment-item-2x">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Ответ x2</p>
+                    </div>
+                </div>
+                <div class="replied-comment-item-3x">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Ответ x3</p>
+                    </div>
+                </div>
+                <div class="replied-comment-item-4x">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Ответ x4</p>
+                    </div>
+                </div>
+                <div class="replied-comment-item-5x">
+                    <div class="item-img">
+                        <svg class="icon-sm" aria-hidden="true">
+                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <div class="item-text">
+                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
+                        <p class="sub-text">Ответ x5</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-container left-space-lg">
+            <p class="tertiary-heading top-space-lg">Neko no Shinden</p>
+            <div class="footer-logo">
+                <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
+            </div>
+        </div>
+        <div class="footer-container left-space-xl">
+            <p class="tertiary-heading top-space-lg">Разделы</p>
+            <a href="#" class="footer-link-text top-space-sm">Каталог</a>
+            <a href="#" class="footer-link-text top-space-sm">Популярное</a>
+            <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
+        </div>
+        <div class="footer-container left-space-xl">
+            <p class="tertiary-heading top-space-lg">Контакты</p>
+            <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            document.getElementById("drop").classList.toggle("show");;
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.drop-btn')) {
+                let dropdowns = document.getElementsByClassName("dropdown-items");
+                let i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.getElementById("navigation").style.top = "0";
+            } else {
+                document.getElementById("navigation").style.top = "-75px";
+            }
+            prevScrollPos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>
