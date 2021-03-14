@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Шаблон главы манги</title>
+    <link rel="icon" href="../img/093c5882575615f5.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/design-system.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/manga-chapter-template-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet preload">
 </head>
 <body class="dark-theme blue">
     <header id="navigation" class="bottom-space-md">
@@ -94,8 +95,13 @@
             <div class="comments-content">
                 <h3 class="tertiary-heading m0">Комментарии</h3>
                 <div class="more top-space-sm">
-                    <button class="tertiary-btn-sm" aria-label="Сортировать сообщения">Новые</button>
-                    <button class="tertiary-btn-sm" aria-label="Перейти к настройкам сообщений">Настройки</button>
+                    <div class="dropdown-click">
+                        <button class="tertiary-btn-sm" aria-label="Сортировать сообщения">Новые</button>
+                        <div class="dropdown-items drop-btn1">
+                            <a href="#" class="dropdown-item">Старые</a>
+                            <a href="#" class="dropdown-item">По популярности</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="group top-space-sm">
                     <form action="">

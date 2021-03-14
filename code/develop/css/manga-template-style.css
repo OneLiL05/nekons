@@ -104,7 +104,7 @@
 
 .description-info .description-sub-info .sub-text:first-child {
     margin-right: var(--space-xxxs);
-    color: var(--white);
+    color: var(--text-color);
 }
 
 .description-info .description-sub-info .sub-text:last-child:hover {

@@ -1,0 +1,9 @@
+#popular {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+}

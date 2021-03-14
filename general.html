@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="code/develop/css/design-system.css">
     <link rel="stylesheet" href="code/develop/css/components.css">
 </head>
-<body class="dark-theme blue simple">
+<body class="dark-theme blue">
     <header id="navigation">
         <a href="general.html" class="logo left-space-xxl">
             <img src="code/develop/img/093c5882575615f5.png" alt="logo" class="logo">
         </a>
         <nav>
-            <a href="#directory" class="nav-text" aria-disabled="false" role="button">Каталог</a>
-            <a href="#popular" class="nav-text" aria-disabled="false" role="button">Популярное</a>
-            <a href="#last-updates" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
+            <a href="code/develop/directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
+            <a href="code/develop/popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
+            <a href="code/develop/last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
         </nav>
         <form action="">
             <label>
@@ -31,7 +31,7 @@
         </form>
         <button class="icon-btn left-space-lg" aria-label="Изменить тему сайта">
             <svg class="icon-sm" aria-hidden="true">
-                <use xlink:href="code/develop/img/theme-changer-icon.svg#theme-changer"></use>
+                <use xlink:href="code/develop/img/icons/theme-changer-icon.svg#theme-changer"></use>
             </svg>
         </button>
         <a href="code/develop/bookmarks/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
@@ -53,9 +53,16 @@
     <div id="last-updates">
         <div class="heading-container">
             <h2 class="secondary-heading left-space-lg">Последние обновления</h2>
-            <a href="#" class="load-more">Ещё</a>
+            <a href="code/develop/last-updates/last-updates.html" class="load-more">Ещё</a>
         </div>
         <div class="manga-directory">
+            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                <div class="manga-item-img"></div>
+                <div class="manga-item-text">
+                    <p class="simple-text">manga</p>
+                    <p class="sub-text">manga manga</p>
+                </div>
+            </a>
             <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
                 <div class="manga-item-img"></div>
                 <div class="manga-item-text">
@@ -117,9 +124,23 @@
     <div id="directory">
         <div class="heading-container">
             <h2 class="secondary-heading left-space-lg">Каталог</h2>
-            <a href="#" class="load-more">Ещё</a>
+            <a href="code/develop/directory/directory.html" class="load-more">Ещё</a>
         </div>
         <div class="manga-directory">
+            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                <div class="manga-item-img"></div>
+                <div class="manga-item-text">
+                    <p class="simple-text">manga</p>
+                    <p class="sub-text">manga manga</p>
+                </div>
+            </a>
+            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                <div class="manga-item-img"></div>
+                <div class="manga-item-text">
+                    <p class="simple-text">manga</p>
+                    <p class="sub-text">manga manga</p>
+                </div>
+            </a>
             <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
                 <div class="manga-item-img"></div>
                 <div class="manga-item-text">
@@ -174,7 +195,7 @@
     <div id="popular">
         <div class="heading-container">
             <h2 class="secondary-heading left-space-lg">Популярное</h2>
-            <a href="#" class="load-more">Ещё</a>
+            <a href="code/develop/popular/popular.html" class="load-more">Ещё</a>
         </div>
         <div class="manga-directory">
             <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
@@ -244,8 +265,8 @@
         </div>
         <div class="footer-container left-space-xl">
             <h3 class="tertiary-heading top-space-lg">Разделы</h3>
-            <a href="#" class="footer-link-text top-space-sm">Каталог</a>
-            <a href="#" class="footer-link-text top-space-sm">Популярное</a>
+            <a href="code/develop/directory/directory.html" class="footer-link-text top-space-sm">Каталог</a>
+            <a href="code/develop/popular/popular.html" class="footer-link-text top-space-sm">Популярное</a>
             <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
         </div>
         <div class="footer-container left-space-xl">
