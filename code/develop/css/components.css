@@ -90,14 +90,14 @@ button {
     outline: none;
     border: none;
     font-size: 1rem;
-    background: #2b303b;
-    color: #63717f;
+    background: var(--form-bg);
+    color: var(--form-text);
     margin-left: 300px;
 }
 
 #navigation label #search-input:hover {
     transition: var(--transition);
-    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.25);
+    box-shadow: var(--item-shadow);
 }
 
 #navigation label #search-input:focus {
@@ -117,7 +117,7 @@ button {
     padding: 0;
     outline: none;
     border: none;
-    background: #2b303b;
+    background: var(--form-bg);
     border-radius: 5px;
     cursor: pointer;
     z-index: 30000;
@@ -125,7 +125,7 @@ button {
 }
 
 #navigation label #search-button:hover {
-    background-color: #242933;
+    background-color: var(--form-bg-hover);
     transition: var(--transition);
 }
 

@@ -6,14 +6,14 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: var(--font-family);
+    font-family: var(--inter);
     background: var(--primary-bg-color);
 }
 
 p {
     font-size: var(--simple-text);
     font-weight: var(--regular-weight);
-    color: var(--white);
+    color: var(--text-color);
 }
 
 a {
@@ -22,10 +22,6 @@ a {
     color: var(--accent-color);
     font-size: var(--simple-text);
     font-weight: var(--regular-weight);
-}
-
-a:hover {
-    color: #1E6BDD;
 }
 
 #sign-in {
@@ -42,7 +38,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: var(--primary-heading);
-    color: var(--white);
+    color: var(--text-color);
 }
 
 #sign-in #email-input, #password-input {
@@ -71,18 +67,18 @@ a:hover {
     border: var(--border);
 }
 
-#sign-in .check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
 #sign-in  .check .check-input {
     position: absolute;
             appearance: none;
        -moz-appearance: none;
     -webkit-appearance: none;
+}
+
+#sign-in .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #sign-in .check-box  {
