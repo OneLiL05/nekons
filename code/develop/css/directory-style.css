@@ -1,0 +1,22 @@
+#directory {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+}
+
+#directory .more {
+    width: 900px;
+    justify-content: flex-start;
+}
+
+#directory .more .dropdown-items {
+    margin-top: 185px;
+}
+
+#directory .more .tertiary-btn {
+    height: 40px;
+}
