@@ -58,21 +58,63 @@
             <h1 class="primary-heading left-space-xxs">Настройки профиля</h1>
         </span>
     </div>
-    <main id="profile-settings">
-        <div class="sidebar">
-            <a class="tertiary-btn-md" aria-label="Перейти к основному">Основное</a>
-            <a   class="tertiary-btn-md" aria-label="Перейти к безопасности">Безопасность</a>
-            <a class="tertiary-btn-md" aria-label="Перейти к акцентным цветам">Акцентные цвета</a>
-        </div>
+    <main id="profile-settings" class="top-space-md">
         <div class="content">
                 <h3 class="tertiary-heading m0">Основные</h3>
                 <div class="inputs-group top-space-sm">
                     <label for="">
                         <p class="sub-text">Имя пользователя</p>
-                        <input type="text" placeholder="Имя пользователя" class="input top-space-xs">
-                        <p class="sub-text top-space-sm">Электронная почта</p>
+                        <input type="text" placeholder="Имя пользователя" class="input">
+                        <p class="sub-text">Электронная почта</p>
+                        <input type="text" placeholder="Электронная почта" inputmode="email" class="input">
+                        <p class="sub-text">Пароль</p>
+                        <input type="text" placeholder="Пароль" inputmode="email" class="input">
                     </label>
                 </div>
+                <h3 class="tertiary-heading top-space-xs">Акцентные цвета</h3>
+                <div class="row top-space-xs">
+                    <label class="check left-space-lg">
+                        <input class="check-input" type="checkbox" name="keep">
+                            <span class="check-box right-space-xxs">
+                                <svg class="icon-xxs" aria-hidden="true">
+                                    <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="check left-space-lg indigo">
+                        <input class="check-input" type="checkbox" name="keep">
+                        <span class="check-box right-space-xxs">
+                                <svg class="icon-xxs" aria-hidden="true">
+                                    <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="check left-space-lg purple">
+                        <input class="check-input" type="checkbox" name="keep">
+                        <span class="check-box right-space-xxs">
+                                <svg class="icon-xxs" aria-hidden="true">
+                                    <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="check left-space-lg pink">
+                        <input class="check-input" type="checkbox" name="keep">
+                        <span class="check-box right-space-xxs">
+                                <svg class="icon-xxs" aria-hidden="true">
+                                    <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                                </svg>
+                            </span>
+                    </label>
+                    <label class="check left-space-lg orange">
+                        <input class="check-input" type="checkbox" name="keep">
+                        <span class="check-box right-space-xxs">
+                                <svg class="icon-xxs" aria-hidden="true">
+                                    <use xlink:href="../img/icons/check-icon.svg#check"></use>
+                                </svg>
+                            </span>
+                    </label>
+                </div>
+            <button class="tertiary-btn-sm top-space-lg">Сохранить</button>
         </div>
     </main>
     <footer id="footer" class="top-space-lg">

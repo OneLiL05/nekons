@@ -1335,3 +1335,67 @@ a:focus {
 .more .tertiary-btn-sm {
     height: 40px;
 }
+
+.active {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+
+    .check .check-input {
+        position: absolute;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .check-box  {
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        margin-left: -2em;
+        background: var(--white);
+        border-radius: 5px;
+        border: 3px solid var(--accent-color);
+    }
+
+    .check-box .icon-xxs {
+        fill: var(--white);
+    }
+
+    .check-input:checked + .check-box {
+        background-color: var(--accent-color);
+    }
+
+    .check-input:focus + .check-box {
+        box-shadow: var(--focus);
+    }
+
+     .check .check-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12px;
+        height: 10px;
+        fill: var(--white);
+    }
+
+    .check .checkbox-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: var(--simple-text);
+        font-weight: 400;
+    }
+
+.dn {
+    display: none;
+}

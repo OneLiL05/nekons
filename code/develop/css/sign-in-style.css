@@ -67,18 +67,18 @@ a {
     border: var(--border);
 }
 
-#sign-in .check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
 #sign-in  .check .check-input {
     position: absolute;
             appearance: none;
        -moz-appearance: none;
     -webkit-appearance: none;
+}
+
+#sign-in .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #sign-in .check-box  {
