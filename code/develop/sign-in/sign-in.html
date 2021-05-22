@@ -5,50 +5,55 @@
     <title>Войти</title>
     <link rel="icon" href="../img/093c5882575615f5.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../develop/css/sign-in-style.css">
-    <link rel="stylesheet" href="../../develop/css/design-system.css">
-    <link rel="stylesheet" href="../../develop/css/components.css">
+    <link rel="stylesheet" href="../css/sign-in-style.css">
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/design-system-adaptive.css">
+    <link rel="stylesheet" href="../css/components.css">
 </head>
 <body class="dark-theme blue">
 <header id="navigation">
-    <a href="../../../general.html" class="logo left-space-xxl">
+    <div class="row left-space-xxl">
+        <a href="../../../general.html" class="logo">
         <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
-    </a>
-    <nav>
-        <a href="../../develop/directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
-        <a href="../../develop/popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
-        <a href="../../develop/last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
-    </nav>
-    <form action="">
-        <label>
-            <input type="search" id="search-input" required placeholder="Что ищем?" class="left-space-xxl">
-            <button class="right-space-lg" id="search-button" type="submit" aria-label="Поиск">
-                <svg class="icon-sm" aria-hidden="true">
-                    <use xlink:href="../img/icons/search-icon.svg#search"></use>
-                </svg>
-            </button>
-        </label>
-    </form>
-    <button class="icon-btn left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
-        </svg>
-    </button>
-    <a href="../../develop/bookmarks/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
-        </svg>
-    </a>
-    <a href="../../develop/notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
-        </svg>
-    </a>
-    <a href="sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-        </svg>
-    </a>
+        </a>
+        <nav>
+            <a href="../directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
+            <a href="../popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
+            <a href="../last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
+        </nav>
+    </div>
+    <div class="row right-space-xxl">
+        <form action="">
+            <label>
+                <input type="search" id="search-input" required placeholder="Что ищем?">
+                <button id="search-button" type="submit" aria-label="Поиск">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use xlink:href="../img/icons/search-icon.svg#search"></use>
+                    </svg>
+                </button>
+            </label>
+        </form>
+        <button class="icon-btn left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+            </svg>
+        </button>
+        <a href="../../develop/bookmarks/bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
+            </svg>
+        </a>
+        <a href="../../develop/notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
+            </svg>
+        </a>
+        <a href="sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+            </svg>
+        </a>
+    </div>
 </header>
 <div id="sign-in">
             <h1 class="primary-heading bottom-space-md">Войти</h1>
@@ -67,11 +72,11 @@
                         <use xlink:href="../img/icons/check-icon.svg#check"></use>
                     </svg>
                 </span>
-                <span class="checkbox-text right-space-xxl">Запомнить меня</span>
+                <span class="checkbox-text">Запомнить меня</span>
             </label>
-            <button type="submit" class="top-space-md" id="login-button">Войти</button>
+            <button type="submit" class="primary-btn-lg top-space-md" id="login-button">Войти</button>
             <div class="sign-up top-space-sm">
-                <p>Нет аккаунта? <a href="../../develop/sign-up/sign-up.html">Зарегистрироваться</a></p>
+                <p>Нет аккаунта? <a  href="../../develop/sign-up/sign-up.html">Зарегистрироваться</a></p>
             </div>
         </div>
     <footer id="footer" class="top-space-lg">

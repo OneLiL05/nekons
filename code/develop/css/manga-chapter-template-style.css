@@ -78,6 +78,11 @@
     background: var(--primary-bg-color);
 }
 
+.comments .items {
+    min-height: 200px;
+    height: auto;
+}
+
 .comments .comments-content {
     display: flex;
     align-items: flex-start;

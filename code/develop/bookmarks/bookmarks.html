@@ -5,50 +5,56 @@
     <title>Закладки</title>
     <link rel="icon" href="../img/093c5882575615f5.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet preload">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/bookmarks-style.css">
     <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/design-system-adaptive.css">
     <link rel="stylesheet" href="../css/components.css">
 </head>
-<body class="light-theme pink">
+<body class="dark-theme blue">
 <header id="navigation">
-    <a href="../../../general.html" class="logo left-space-xxl">
-        <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
-    </a>
-    <nav>
-        <a href="../directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
-        <a href="../popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
-        <a href="../last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
-    </nav>
-    <form action="">
-        <label>
-            <input type="search" id="search-input" required placeholder="Что ищем?" class="left-space-xxl">
-            <button class="right-space-lg" id="search-button" type="submit" aria-label="Поиск">
-                <svg class="icon-sm" aria-hidden="true">
-                    <use xlink:href="../img/icons/search-icon.svg#search"></use>
-                </svg>
-            </button>
-        </label>
-    </form>
-    <button class="icon-btn left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
-        </svg>
-    </button>
-    <a href="bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
-        </svg>
-    </a>
-    <a href="../notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
-        </svg>
-    </a>
-    <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
-        <svg class="icon-sm" aria-hidden="true">
-            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-        </svg>
-    </a>
+    <div class="row left-space-xxl">
+        <a href="../../../general.html" class="logo">
+            <img src="../img/093c5882575615f5.png" alt="logo" class="logo">
+        </a>
+        <nav role="navigation">
+            <a href="../directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
+            <a href="../popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
+            <a href="../last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
+        </nav>
+    </div>
+    <div class="row right-space-xxl">
+        <form action="">
+            <label for="search-input" rel="section" id="search-label">
+                <input type="search" id="search-input" required placeholder="Что ищем?">
+                <button id="search-button" type="submit" aria-label="Поиск">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use xlink:href="../img/icons/search-icon.svg#search"></use>
+                    </svg>
+                </button>
+            </label>
+        </form>
+        <button class="icon-btn change-theme left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+            </svg>
+        </button>
+        <a href="bookmarks.html" class="icon-btn left-space-sm" aria-label="Перейти к закладкам">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
+            </svg>
+        </a>
+        <a href="../notifications/notifications.html" class="icon-btn left-space-sm" aria-label="Перейти к уведомлениям">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
+            </svg>
+        </a>
+        <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
+            <svg class="icon-sm" aria-hidden="true">
+                <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
+            </svg>
+        </a>
+    </div>
 </header>
     <div id="header">
         <span class="header-container top-space-md">
@@ -59,7 +65,7 @@
             </a>
             <h1 class="primary-heading left-space-xxs">Закладки</h1>
         </span>
-        <div class="tabs top-space-xl" role="tab">
+        <div class="tabs top-space-xl" role="tablist">
             <button class="first-tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к читаемой манге">Читаю</button>
             <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к манге, которую собираетесь читать">Буду читать</button>
             <button class="tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к прочитанной манге">Прочитано</button>
@@ -68,7 +74,7 @@
             <button class="last-tab" type="button" role="tab" aria-selected="false" aria-label="Перейти к не интересной манге">Не интерестно</button>
         </div>
     </div>
-    <div id="read">
+    <main role="main" id="read">
         <div class="more m0">
             <div class="dropdown">
                 <button class="icon-btn right-space-md" onclick="" aria-label="Прочитанное или нет">
@@ -83,10 +89,12 @@
             </div>
         </div>
         <div class="items top-space-sm">
-            <a href="#" class="item ">
+            <a href="#" class="item">
                 <div class="item-block">
-                    <div class="item-img"></div>
-                    <div class="item-text">
+                    <div role="img">
+                        <img class="item-img" src="../img/musubaru-yakeato-cover.jpg" alt="обложка манги">
+                    </div>
+                    <div class="item-text" role="contentinfo">
                         <p class="simple-text left-space-md">manga</p>
                         <p class="sub-text left-space-md">chapter</p>
                     </div>
@@ -98,15 +106,15 @@
                                 <use xlink:href="../img/icons/ellipsis-h-icon.svg#ellipsis-h"></use>
                             </svg>
                         </button>
-                        <div class="dropdown-items">
-                            <button class="dropdown-item">Буду читать</button>
-                            <button class="dropdown-item">Прочитано</button>
-                            <button class="dropdown-item">Отложено</button>
-                            <button class="dropdown-item">Брошено</button>
-                            <button class="dropdown-item">Не интересно</button>
+                        <div class="dropdown-items" role="listbox">
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку буду читать">Буду читать</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку прочитано">Прочитано</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку отложено">Отложено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку брошено">Брошено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку не интересно">Не интересно</button>
                         </div>
                     </div>
-                    <button class="icon-btn right-space-md" onclick="" aria-label="Удалить">
+                    <button class="icon-btn delete-bookmark right-space-md" onclick="" aria-label="Удалить">
                         <svg class="icon-sm" aria-hidden="true">
                             <use xlink:href="../img/icons/delete-icon.svg#delete"></use>
                         </svg>
@@ -115,8 +123,10 @@
             </a>
             <a href="#" class="item">
                 <div class="item-block">
-                    <div class="item-img"></div>
-                    <div class="item-text">
+                    <div role="img">
+                        <img class="item-img" src="../img/musubaru-yakeato-cover.jpg" alt="обложка манги">
+                    </div>
+                    <div class="item-text" role="contentinfo">
                         <p class="simple-text left-space-md">manga</p>
                         <p class="sub-text left-space-md">chapter</p>
                     </div>
@@ -128,15 +138,15 @@
                                 <use xlink:href="../img/icons/ellipsis-h-icon.svg#ellipsis-h"></use>
                             </svg>
                         </button>
-                        <div class="dropdown-items">
-                            <button class="dropdown-item">Буду читать</button>
-                            <button class="dropdown-item">Прочитано</button>
-                            <button class="dropdown-item">Отложено</button>
-                            <button class="dropdown-item">Брошено</button>
-                            <button class="dropdown-item">Не интересно</button>
+                        <div class="dropdown-items" role="listbox">
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку буду читать">Буду читать</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку прочитано">Прочитано</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку отложено">Отложено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку брошено">Брошено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку не интересно">Не интересно</button>
                         </div>
                     </div>
-                    <button class="icon-btn right-space-md" onclick="" aria-label="Удалить">
+                    <button class="icon-btn delete-bookmark right-space-md" onclick="" aria-label="Удалить">
                         <svg class="icon-sm" aria-hidden="true">
                             <use xlink:href="../img/icons/delete-icon.svg#delete"></use>
                         </svg>
@@ -145,8 +155,10 @@
             </a>
             <a href="#" class="item">
                 <div class="item-block">
-                    <div class="item-img"></div>
-                    <div class="item-text">
+                    <div role="img">
+                        <img class="item-img" src="../img/musubaru-yakeato-cover.jpg" alt="обложка манги">
+                    </div>
+                    <div class="item-text" role="contentinfo">
                         <p class="simple-text left-space-md">manga</p>
                         <p class="sub-text left-space-md">chapter</p>
                     </div>
@@ -158,15 +170,15 @@
                                 <use xlink:href="../img/icons/ellipsis-h-icon.svg#ellipsis-h"></use>
                             </svg>
                         </button>
-                        <div class="dropdown-items">
-                            <button class="dropdown-item">Буду читать</button>
-                            <button class="dropdown-item">Прочитано</button>
-                            <button class="dropdown-item">Отложено</button>
-                            <button class="dropdown-item">Брошено</button>
-                            <button class="dropdown-item">Не интересно</button>
+                        <div class="dropdown-items" role="listbox">
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку буду читать">Буду читать</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку прочитано">Прочитано</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку отложено">Отложено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку брошено">Брошено</button>
+                            <button role="option" class="dropdown-item" aria-label="Добавить во вкладку не интересно">Не интересно</button>
                         </div>
                     </div>
-                    <button class="icon-btn delete right-space-md" onclick="" aria-label="Удалить">
+                    <button class="icon-btn delete-bookmark right-space-md" onclick="" aria-label="Удалить">
                         <svg class="icon-sm" aria-hidden="true">
                             <use xlink:href="../img/icons/delete-icon.svg#delete"></use>
                         </svg>
@@ -175,24 +187,25 @@
             </a>
         </div>
         <button class="load-more-btn top-space-md" type="button">Загрузить ещё</button>
-    </div>
-        <footer id="footer" class="top-space-lg">
-            <div class="footer-container left-space-lg">
-                <p class="tertiary-heading top-space-lg">Neko no Shinden</p>
-                <div class="footer-logo">
-                    <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
-                </div>
+    </main>
+    <footer id="footer" class="top-space-lg">
+        <div class="footer-container left-space-lg">
+            <h3 role="none" class="tertiary-heading top-space-lg">Neko no Shinden</h3>
+            <div class="footer-logo">
+                <img src="../img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
             </div>
-            <div class="footer-container left-space-xl">
-                <p class="tertiary-heading top-space-lg">Разделы</p>
-                <a href="#" class="footer-link-text top-space-sm">Каталог</a>
-                <a href="#" class="footer-link-text top-space-sm">Популярное</a>
-                <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
-            </div>
-            <div class="footer-container left-space-xl">
-                <p class="tertiary-heading top-space-lg">Контакты</p>
-                <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-container left-space-xl">
+            <h3 role="none" class="tertiary-heading top-space-lg">Разделы</h3>
+            <a href="#" class="footer-link-text top-space-sm">Каталог</a>
+            <a href="#" class="footer-link-text top-space-sm">Популярное</a>
+            <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
+        </div>
+        <div class="footer-container left-space-xl">
+            <h3 role="none" class="tertiary-heading top-space-lg">Контакты</h3>
+            <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
+        </div>
+    </footer>
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

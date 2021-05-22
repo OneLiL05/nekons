@@ -5,6 +5,7 @@
     <title>Шаблон главы манги</title>
     <link rel="icon" href="../img/093c5882575615f5.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/design-system-adaptive.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/manga-chapter-template-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet preload">
@@ -50,9 +51,19 @@
                     <button class="dropdown-item">Не интересно</button>
                 </div>
             </div>
-            <button class="icon-btn left-space-md" aria-label="Перейти на страницу смены цветовой темы сайта">
+            <button class="icon-btn change-theme left-space-md" aria-label="Перейти на страницу смены цветовой темы сайта">
                 <svg class="icon-sm" aria-hidden="true">
                     <use xlink:href="../img/icons/theme-changer-icon.svg#theme-changer"></use>
+                </svg>
+            </button>
+            <button class="icon-btn left-space-md" aria-label="Добавить мангу в закладки">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/bookmark-icon.svg#bookmark"></use>
+                </svg>
+            </button>
+            <button class="icon-btn left-space-md" aria-label="Перейти к уведомлениям">
+                <svg class="icon-sm" aria-hidden="true">
+                    <use xlink:href="../img/icons/notification-icon.svg#notification"></use>
                 </svg>
             </button>
             <a href="../sign-in/sign-in.html" class="icon-btn left-space-sm" aria-label="Перейти к профилю">
@@ -104,97 +115,17 @@
                     </div>
                 </div>
                 <div class="group top-space-sm">
-                    <form action="">
                         <label for="comment" class="group">
                             <textarea class="comment-input" id="comment" placeholder="Комментарий"></textarea>
-                            <button class="primary-icon-btn left-space-md" aria-label="Отправить комментарий">
+                            <button class="primary-icon-btn left-space-md" id="create-comment" aria-label="Отправить комментарий">
                                 <svg class="icon-sm" aria-hidden="true">
                                     <use xlink:href="../img/icons/send-icon.svg#send"></use>
                                 </svg>
                             </button>
                         </label>
-                    </form>
                 </div>
+                <div class="items top-space-sm" id="comments"></div>
         </div>
-            <div class="items top-space-sm">
-                <div class="comment-item">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Короткий комментарий</p>
-                    </div>
-                </div>
-                <div class="comment-item">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Длинный комментарий</p>
-                    </div>
-                </div>
-                <div class="replied-comment-item">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Ответ</p>
-                    </div>
-                </div>
-                <div class="replied-comment-item-2x">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Ответ x2</p>
-                    </div>
-                </div>
-                <div class="replied-comment-item-3x">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Ответ x3</p>
-                    </div>
-                </div>
-                <div class="replied-comment-item-4x">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Ответ x4</p>
-                    </div>
-                </div>
-                <div class="replied-comment-item-5x">
-                    <div class="item-img">
-                        <svg class="icon-sm" aria-hidden="true">
-                            <use xlink:href="../img/icons/profile-icon.svg#profile"></use>
-                        </svg>
-                    </div>
-                    <div class="item-text">
-                        <a href="../profile/profile.html" class="simple-text">pump_vasily</a>
-                        <p class="sub-text">Ответ x5</p>
-                    </div>
-                </div>
-            </div>
     </main>
     <footer id="footer">
         <div class="footer-container left-space-lg">
@@ -216,7 +147,7 @@
     </footer>
     <script>
         function myFunction() {
-            document.getElementById("drop").classList.toggle("show");;
+            document.getElementById("drop").classList.toggle("show");
         }
 
         window.onclick = function(event) {
@@ -243,5 +174,6 @@
             prevScrollPos = currentScrollPos;
     }
     </script>
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

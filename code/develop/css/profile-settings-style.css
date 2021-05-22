@@ -56,3 +56,7 @@
 .input:focus {
     border: var(--border);
 }
+
+.check-group {
+    gap: 2rem;
+}
