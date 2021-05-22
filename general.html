@@ -7,29 +7,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="code/develop/css/general-style.css">
     <link rel="stylesheet" href="code/develop/css/design-system.css">
+    <link rel="stylesheet" href="code/develop/css/design-system-adaptive.css">
     <link rel="stylesheet" href="code/develop/css/components.css">
 </head>
 <body class="dark-theme blue">
     <header id="navigation">
-        <a href="general.html" class="logo left-space-xxl">
+        <div class="menu-mobile col">
+            <a href="general.html" class="logo">
+                <img src="code/develop/img/093c5882575615f5.png" alt="logo" class="logo">
+            </a>
+            <div class="col">
+                <a href="code/develop/profile/profile.html" class="simple-text">Профиль</a>
+                <a href="code/develop/directory/directory.html" class="simple-text">Каталог</a>
+                <a href="code/develop/notifications/notifications.html" class="simple-text">Уведомления</a>
+                <a href="code/develop/bookmarks/bookmarks.html" class="simple-text">Закладки</a>
+                <a href="code/develop/history/history.html" class="simple-text">История</a>
+                <button class="icon-btn">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use xlink:href="code/develop/img/icons/close-icon.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row left-space-xxl">
+        <a href="general.html" class="logo">
             <img src="code/develop/img/093c5882575615f5.png" alt="logo" class="logo">
         </a>
-        <nav>
+        <nav role="navigation">
             <a href="code/develop/directory/directory.html" class="nav-text" aria-disabled="false" role="button">Каталог</a>
             <a href="code/develop/popular/popular.html" class="nav-text" aria-disabled="false" role="button">Популярное</a>
             <a href="code/develop/last-updates/last-updates.html" class="nav-text" aria-disabled="false" role="button">Последние обновления</a>
         </nav>
+    </div>
+        <div class="row right-space-xxl">
         <form action="">
-            <label>
-                <input type="search" id="search-input" inputmode="search" required placeholder="Что ищем?" class="left-space-xxl">
-                <button class="right-space-lg" id="search-button" type="submit" aria-label="Поиск">
+            <label for="search-input" rel="section">
+                <input type="search" id="search-input" required placeholder="Что ищем?">
+                <button id="search-button" type="submit" aria-label="Поиск">
                     <svg class="icon-sm" aria-hidden="true">
                         <use xlink:href="code/develop/img/icons/search-icon.svg#search"></use>
                     </svg>
                 </button>
             </label>
         </form>
-        <button class="icon-btn left-space-lg" aria-label="Изменить тему сайта">
+        <button class="icon-btn change-theme left-space-lg" aria-label="Перейти на страницу смены цветовой темы сайта">
             <svg class="icon-sm" aria-hidden="true">
                 <use xlink:href="code/develop/img/icons/theme-changer-icon.svg#theme-changer"></use>
             </svg>
@@ -49,217 +70,65 @@
                 <use xlink:href="code/develop/img/icons/profile-icon.svg#profile"></use>
             </svg>
         </a>
+    </div>
     </header>
-    <div id="last-updates">
-        <div class="heading-container">
-            <h2 class="secondary-heading left-space-lg">Последние обновления</h2>
-            <a href="code/develop/last-updates/last-updates.html" class="load-more">Ещё</a>
+    <main id="main" role="main">
+        <div id="last-updates">
+            <div class="heading-container">
+                <h2 role="none" class="secondary-heading left-space-lg">Последние обновления</h2>
+                <a href="code/develop/last-updates/last-updates.html" class="load-more">Ещё</a>
+            </div>
+            <div class="manga-directory">
+                <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                    <div role="img">
+                        <img class="manga-item-img" src="code/develop/img/musubaru-yakeato-cover.jpg" alt="Обложка манги">
+                    </div>
+                    <div role="contentinfo" aria-label="Описание манги" class="manga-item-text">
+                        <p class="simple-text">Связанные пеплом</p>
+                        <p class="sub-text">История Сэйнэн</p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="manga-directory">
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
+        <div id="directory">
+            <div class="heading-container">
+                <h2 role="doc-subtitle" class="secondary-heading left-space-lg">Каталог</h2>
+                <a href="code/develop/directory/directory.html" class="load-more">Ещё</a>
+            </div>
+            <div class="manga-directory">
+                <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                    <div role="img">
+                        <img class="manga-item-img" src="code/develop/img/musubaru-yakeato-cover.jpg" alt="Обложка манги">
+                    </div>
+                    <div role="contentinfo" aria-label="Заголовок и тэги манги" class="manga-item-text">
+                        <p class="simple-text">Связанные пеплом</p>
+                        <p class="sub-text">История Сэйнэн</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    <div id="directory">
-        <div class="heading-container">
-            <h2 class="secondary-heading left-space-lg">Каталог</h2>
-            <a href="code/develop/directory/directory.html" class="load-more">Ещё</a>
+        <div id="popular">
+            <div class="heading-container">
+                <h2 role="doc-subtitle" class="secondary-heading left-space-lg">Популярное</h2>
+                <a role="button" href="code/develop/popular/popular.html" class="load-more">Ещё</a>
+            </div>
+            <div class="manga-directory">
+                <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
+                    <div role="img">
+                        <img class="manga-item-img" src="code/develop/img/musubaru-yakeato-cover.jpg" alt="Обложка манги">
+                    </div>
+                    <div role="contentinfo" aria-label="Заголовок и тэги манги" class="manga-item-text">
+                        <p class="simple-text">Связанные пеплом</p>
+                        <p class="sub-text">История Сэйнэн</p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="manga-directory">
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div id="popular">
-        <div class="heading-container">
-            <h2 class="secondary-heading left-space-lg">Популярное</h2>
-            <a href="code/develop/popular/popular.html" class="load-more">Ещё</a>
-        </div>
-        <div class="manga-directory">
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-            <a href="code/develop/templates/manga-template.html" class="manga-item left-space-lg">
-                <div class="manga-item-img"></div>
-                <div class="manga-item-text">
-                    <p class="simple-text">manga</p>
-                    <p class="sub-text">manga manga</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <footer id="footer" class="top-space-lg">
+    </main>
+    <footer role="contentinfo" aria-label="Элементы подвала" id="footer" class="top-space-lg">
         <div class="footer-container left-space-lg">
             <h3 class="tertiary-heading top-space-lg">Neko no Shinden</h3>
-            <div class="footer-logo">
+            <div class="footer-logo" role="img">
                 <img src="code/develop/img/093c5882575615f5.png" alt="лого футера" aria-label="Логотип в футере" class="footer-logo top-space-sm">
             </div>
         </div>
@@ -267,10 +136,10 @@
             <h3 class="tertiary-heading top-space-lg">Разделы</h3>
             <a href="code/develop/directory/directory.html" class="footer-link-text top-space-sm">Каталог</a>
             <a href="code/develop/popular/popular.html" class="footer-link-text top-space-sm">Популярное</a>
-            <a href="#" class="footer-link-text top-space-sm">Последние <br> обновления</a>
+            <a href="code/develop/last-updates/last-updates.html" class="footer-link-text top-space-sm">Последние <br> обновления</a>
         </div>
         <div class="footer-container left-space-xl">
-            <p class="tertiary-heading top-space-lg">Контакты</p>
+            <h3 class="tertiary-heading top-space-lg">Контакты</h3>
             <a href="mailto:neko-no-shinden@gmail.com" class="footer-link-text top-space-sm">neko-no-shinden@gmail.com</a>
         </div>
     </footer>

@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--inter);
+  background: var(--primary-bg-color);
+}
+
+p {
+  font-size: var(--simple-text);
+  font-weight: var(--regular-weight);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  color: var(--accent-color);
+  font-size: var(--simple-text);
+  font-weight: var(--regular-weight);
+}
+
+#sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+
+  .primary-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--primary-heading);
+    color: var(--text-color);
+  }
+
+  #email-input, #password-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 276px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    outline: none;
+    font-size: var(--simple-text);
+    font-weight: var(--regular-weight);
+    border: var(--form-border);
+    background: var(--form-bg);
+    color: var(--form-text);
+    padding: 0 0 0 1em;
+    &:hover {
+      transition: var(--transition);
+      box-shadow: var(--form-hover);
+    }
+    &:focus {
+      transition: var(--transition);
+      border: var(--border);
+    }
+  }
+
+  .check {
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    .check-input {
+      position: absolute;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      &:checked + .check-box{
+        background-color: var(--accent-color);
+      }
+      &:focus + .check-box {
+        box-shadow: var(--focus);
+      }
+    }
+
+    .check-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 12px;
+      height: 10px;
+      fill: var(--white);
+    }
+
+    .checkbox-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: var(--simple-text);
+      font-weight: 400;
+    }
+  }
+
+  .check-box {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -2em;
+    background: var(--white);
+    border-radius: 5px;
+    border: 3px solid var(--accent-color);
+
+    .icon-xxs {
+      fill: var(--white);
+    }
+  }
+}

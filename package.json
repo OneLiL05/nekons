@@ -1,0 +1,22 @@
+{
+  "name": "nekons",
+  "version": "1.0.0",
+  "description": "some site",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneLiL05/nekons.git"
+  },
+  "author": "OneLiL05 shabi-x64",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/OneLiL05/nekons/issues"
+  },
+  "homepage": "https://github.com/OneLiL05/nekons#readme"
+}

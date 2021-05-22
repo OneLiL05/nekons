@@ -1,0 +1,1 @@
+import {deleteItem} from "../modules/functions.js";
